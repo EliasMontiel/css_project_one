@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
+}
+
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/general_images/Catherine-Jason-Sinn-1920x400-1.jpg");
+  
+    /* height */ 
+    height: 70%;
+  
+    /* Position */
+    background-position: 43%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* text */
+  .hero-text {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+/* body{
+    margin:0;
+} */
+nav{
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style: none;
+    display:flex;
+    background-color: black;
+    margin:0;
+    padding:20px;
+    justify-content: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    /* font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    /* transition: color 1s; */
+}
+
+li a:hover{
+    background-color: gray;
+    /* color: yellow; */
+    /* font-size: 30px; */
+
+}
+/* when you click on the link */
+li a:active{
+    background-color: white;
+    color: black;
+}
+
+/* @media screen and (orientation: portrait) {
+    body{
+        background-color: green;
+    }
+    ul{
+        flex-direction: column;
+    }
+} */
