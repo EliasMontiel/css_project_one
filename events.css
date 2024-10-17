@@ -1,0 +1,30 @@
+h1{
+    text-align:center;
+}
+
+.event_1_img
+{
+    size: fit-content;
+    padding:20px;
+    display:flex;
+    justify-content: baseline;
+    float:left;
+    background-color:dimgray;
+}
+
+.event_1_img img
+{
+    display:flex;
+    justify-content: baseline;
+    float:left;
+    border-style:double;
+    border-width: 10px;
+    border-color:black;
+}
+
+.event_1_text {
+    padding:20px;
+    display:flex;
+    float:right;
+    color:white;
+}
