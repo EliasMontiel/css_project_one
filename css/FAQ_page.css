@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
+}
+
+div.main_faq {
+    margin: 1.5em;
+}
+
+p, h4 {
+    margin: 2em;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style: none;
+    display:flex;
+    background-color: black;
+    margin:0;
+    padding:20px;
+    justify-content: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    /* font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    /* transition: color 1s; */
+}
+
+li a:hover{
+    background-color: gray;
+    /* color: yellow; */
+    /* font-size: 30px; */
+
+}
+/* when you click on the link */
+li a:active{
+    background-color: white;
+    color: black;
+}
+
