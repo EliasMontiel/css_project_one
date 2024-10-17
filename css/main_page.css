@@ -50,6 +50,7 @@ li a{
     text-decoration: none;
     color: white;
     padding: 20px 40px;
+    font-size: 1.5em;
     /* font-family: "Qwitcher Grypen", cursive;
     font-weight: 400;
     font-style: normal; */
@@ -57,7 +58,7 @@ li a{
 }
 
 li a:hover{
-    background-color: gray;
+    background-color: #45634C;
     /* color: yellow; */
     /* font-size: 30px; */
 
@@ -68,11 +69,12 @@ li a:active{
     color: black;
 }
 
-/* @media screen and (orientation: portrait) {
-    body{
+@media screen and (orientation: portrait) {
+    /* body{
         background-color: green;
-    }
+    } */
     ul{
-        flex-direction: column;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
     }
-} */
+}
