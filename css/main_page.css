@@ -1,0 +1,191 @@
+body, html {
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
+}
+
+.main-page {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "s1 s1 s2 s2"
+      "s1 s1 s2 s2"
+      "s3 s3 s4 s4"
+      "s3 s3 s4 s4"
+      "s5 s5 s5 s5";
+}
+.s1 { 
+    grid-area: s1; 
+    color: white;
+    background-color: #45634C;
+    min-height: 500px;
+    border-radius: 25px;
+    padding: 20px; 
+    margin: 20px;
+}
+.s1 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
+} 
+  
+  
+.s2 { 
+    grid-area: s2;
+    color: white;
+    background-color: #99ae9e; 
+    min-height: 500px;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+  
+.s3 {
+     grid-area: s3;
+     color: white;
+    background-color: #99ae9e; 
+    min-height: 500px;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+  
+.s4 { 
+    grid-area: s4; 
+    color: white;
+    background-color: #45634C;
+    min-height: 500px;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+.s5 { 
+    grid-area: s5; 
+    color: white;
+    background-color: black;
+    margin: 0px;
+}
+
+/* .footer{
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+} */
+  
+
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("/general-images/Catherine-Jason-Sinn-1920x400-1.jpg");
+  
+    /* height */ 
+    height: 70%;
+  
+    /* Position */
+    background-position: 43%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* text */
+  .hero-text {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "victorian-orchid", serif;
+  }
+
+
+/* body{
+    margin:0;
+} */
+nav{
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style: none;
+    display:flex;
+    background-color: black;
+    margin:0;
+    padding:20px;
+    justify-content: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    font-family: "victorian-orchid", serif;
+    /* font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    /* transition: color 1s; */
+    transform: translate(-50%, -50%);
+}
+
+li a:hover{
+    background-color: #45634C;
+    animation:  shake 0.8s;
+    /* color: yellow; */
+    /* font-size: 30px; */
+
+}
+@keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    25%{
+      transform: translateX(25px);
+    }
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+/* when you click on the link */
+li a:active{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (orientation: portrait) {
+    /* body{
+        background-color: green;
+    } */
+    ul{
+        flex-wrap: wrap;
+        gap: 2em
+        /* flex-direction: column; */
+    }
+    .main-page {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "s1 s1"
+          "s2 s2"
+          "s3 s3"
+          "s4 s4"
+          "s5 s5";
+    }
+
+}
