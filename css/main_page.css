@@ -20,41 +20,48 @@ body, html {
 .s1 { 
     grid-area: s1; 
     color: white;
-    background-color: black;
+    background-color: #45634C;
     min-height: 500px;
     border-radius: 25px;
     padding: 20px; 
-    margin: 10px;
+    margin: 20px;
 }
+.s1 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
+} 
+  
   
 .s2 { 
     grid-area: s2;
     color: white;
-    background-color: blue; 
+    background-color: #99ae9e; 
     min-height: 500px;
     border-radius: 25px;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
 }
   
 .s3 {
      grid-area: s3;
      color: white;
-    background-color: green; 
+    background-color: #99ae9e; 
     min-height: 500px;
     border-radius: 25px;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
 }
   
 .s4 { 
     grid-area: s4; 
     color: white;
-    background-color: orange;
+    background-color: #45634C;
     min-height: 500px;
     border-radius: 25px;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
 }
 .s5 { 
     grid-area: s5; 
@@ -97,6 +104,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: "victorian-orchid", serif;
   }
 
 
@@ -121,18 +129,35 @@ li a{
     color: white;
     padding: 20px 40px;
     font-size: 1.5em;
+    font-family: "victorian-orchid", serif;
     /* font-family: "Qwitcher Grypen", cursive;
     font-weight: 400;
     font-style: normal; */
     /* transition: color 1s; */
+    transform: translate(-50%, -50%);
 }
 
 li a:hover{
     background-color: #45634C;
+    animation:  shake 0.8s;
     /* color: yellow; */
     /* font-size: 30px; */
 
 }
+@keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    25%{
+      transform: translateX(25px);
+    }
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
 /* when you click on the link */
 li a:active{
     background-color: white;
@@ -148,4 +173,18 @@ li a:active{
         gap: 2em
         /* flex-direction: column; */
     }
+    .main-page {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "s1 s1"
+          "s2 s2"
+          "s3 s3"
+          "s4 s4"
+          "s5 s5";
+    }
+
 }
