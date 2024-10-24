@@ -2,14 +2,20 @@ body, html {
     height: 100%;
     margin:0;
     overflow-x: hidden;
+    font-family: "victorian-orchid", serif;
 }
 
 h1{
     text-align: center;
 }
 
+h4 {
+    font-size: large;
+}
+
 div{
-    padding: 1em;
+    padding: 0.5em;
+    margin: 10px;
 }
 
 .boxoffice {
@@ -17,6 +23,13 @@ div{
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
+}
+
+.boxoffice div {
+    background-color: beige;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
     
 }
 
