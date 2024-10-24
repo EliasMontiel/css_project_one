@@ -4,13 +4,22 @@ body, html {
     overflow-x: hidden;
 }
 
-div.main_faq {
-    margin: 1.5em;
+h1{
+    text-align: center;
 }
 
-p, h4 {
-    margin: 2em;
+div{
+    padding: 1em;
 }
+
+.boxoffice {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    
+}
+
 nav{
     position: sticky;
     top: 0;
