@@ -27,18 +27,15 @@ h1{
 }
 
 .event_image{
-    float:left;
     border-radius: 10px;
     margin-right:20px;
     width:45%;
     height:auto;
 }
 
-
 .event_text {
     padding:20px;
     align-self: center;
-    /* float:right; */
     color:white;
 }
 
