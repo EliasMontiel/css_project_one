@@ -1,3 +1,76 @@
+/* information */
+
+h1{
+    text-align: center;
+}
+
+h4 {
+    font-size: large;
+}
+
+/* 
+    Do not uncomment, creates conflicts with hero image
+    div{
+    padding: 0.5em;
+    margin: 10px;
+} */
+
+.boxoffice {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    padding: 0.5em;
+    margin: 10px;
+}
+
+.boxoffice div {
+    background-color: beige;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    padding: 0.5em;
+    margin: 10px;
+}
+
+
+nav{
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style: none;
+    display:flex;
+    background-color: black;
+    margin:0;
+    padding:20px;
+    justify-content: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    /* font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    /* transition: color 1s; */
+}
+
+li a:hover{
+    background-color: gray;
+    /* color: yellow; */
+    /* font-size: 30px; */
+
+}
+/* when you click on the link */
+li a:active{
+    background-color: white;
+    color: black;
+}
+
+/* hero image */
+
 
 body, html {
     height: 100%;
@@ -9,7 +82,7 @@ body, html {
 /* The hero image */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url("../general-images/paul-naslund-roxborough-1920x600-1-1024x320.jpg");
+    url("../general-images/carolyn-kunicki-river-1920x600-1-1024x320.jpg");
   
     /* height */ 
     height: 70%;
@@ -114,75 +187,3 @@ li a:active{
     }
 
 }
-
-
-h1{
-    text-align: center;
-}
-
-h2{
-    text-align:center;
-}
-
-h4 {
-    font-size: large;
-}
-
-/* div{
-    padding: 0.5em;
-    margin: 10px;
-} */
-
-.boxoffice {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-    padding: 0.5em;
-    margin: 10px;
-}
-
-.boxoffice div {
-    background-color: beige;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-    padding: 0.5em;
-    margin: 10px;
-}
-
-nav{
-    position: sticky;
-    top: 0;
-}
-ul{
-    list-style: none;
-    display:flex;
-    background-color: black;
-    margin:0;
-    padding:20px;
-    justify-content: center;
-}
-
-li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px 40px;
-    /* font-family: "Qwitcher Grypen", cursive;
-    font-weight: 400;
-    font-style: normal; */
-    /* transition: color 1s; */
-}
-
-li a:hover{
-    background-color: gray;
-    /* color: yellow; */
-    /* font-size: 30px; */
-
-}
-/* when you click on the link */
-li a:active{
-    background-color: white;
-    color: black;
-}
-
