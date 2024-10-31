@@ -1,4 +1,9 @@
-
+body, html {
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
+    background-color: white; 
+}
 
 .month{
     align-items: center;
@@ -23,7 +28,15 @@
     width:auto;
     height:auto;
     padding:50px;
-    background-color:dimgray;
+    background-color: #45634C;
+}
+.event2{
+    display:flex;
+    justify-content: center;
+    width:auto;
+    height:auto;
+    padding:50px;
+    background-color: #99ae9e; 
 }
 
 .event_image{
@@ -44,4 +57,100 @@ font-size: 50px;
 }   
 .event_text p{
     font-size:20px;
+}
+
+
+
+/* nav bar and hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("/general-images/peter-civic-center-1920x600-1-1024x320.jpg");
+  
+    /* height */ 
+    height: 70%;
+  
+    /* Position */
+    background-position: 43%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* text */
+  .hero-text {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "victorian-orchid", serif;
+  }
+
+
+/* body{
+    margin:0;
+} */
+nav{
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style: none;
+    display:flex;
+    background-color: black;
+    margin:0;
+    padding:20px;
+    justify-content: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    font-family: "victorian-orchid", serif;
+    /* font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    /* transition: color 1s; */
+    /* transform: translate(-50%, -50%); */
+}
+
+li a:hover{
+    background-color: #45634C;
+    /* animation:  shake 0.8s; */
+    /* color: yellow; */
+    /* font-size: 30px; */
+
+}
+/* when you click on the link */
+li a:active{
+    background-color: white;
+    color: black;
+}
+@media screen and (orientation: portrait) {
+    /* body{
+        background-color: green;
+    } */
+    ul{
+        flex-wrap: wrap;
+        gap: 2em
+        /* flex-direction: column; */
+    }
+    .main-page {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "s1 s1"
+          "s2 s2"
+          "s3 s3"
+          "s4 s4"
+          "s5 s5";
+    }
+
 }
