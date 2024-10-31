@@ -2,15 +2,37 @@ body, html {
     height: 100%;
     margin:0;
     overflow-x: hidden;
+    font-family: "victorian-orchid", serif;
 }
 
-div.main_faq {
-    margin: 1.5em;
+h1{
+    text-align: center;
 }
 
-p, h4 {
-    margin: 2em;
+h4 {
+    font-size: large;
 }
+
+div{
+    padding: 0.5em;
+    margin: 10px;
+}
+
+.boxoffice {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.boxoffice div {
+    background-color: beige;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    
+}
+
 nav{
     position: sticky;
     top: 0;
