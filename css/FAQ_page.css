@@ -144,12 +144,6 @@ li a{
     /* transition: color 1s; */
 }
 
-li a:hover{
-    background-color: gray;
-    /* color: yellow; */
-    /* font-size: 30px; */
-
-}
 /* when you click on the link */
 li a:active{
     background-color: white;
