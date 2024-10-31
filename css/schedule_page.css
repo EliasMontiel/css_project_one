@@ -60,11 +60,10 @@ font-size: 50px;
 }
 
 
-
 /* nav bar and hero image */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url("/general-images/peter-civic-center-1920x600-1-1024x320.jpg");
+    url("../general-images/peter-civic-center-1920x600-1-1024x320.jpg");
   
     /* height */ 
     height: 70%;
