@@ -1,0 +1,47 @@
+
+
+.month{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+/* .event_1
+{
+    width:auto;
+    float:left;
+    size: fit-content;
+    padding:20px;
+    display:flex;
+    justify-content: baseline;
+    background-color:dimgray;
+} */
+
+.event{
+    display:flex;
+    justify-content: center;
+    width:auto;
+    height:auto;
+    padding:50px;
+    background-color:dimgray;
+}
+
+.event_image{
+    border-radius: 10px;
+    margin-right:20px;
+    width:45%;
+    height:auto;
+}
+
+.event_text {
+    padding:20px;
+    align-self: center;
+    color:white;
+}
+
+.event_text h2{
+font-size: 50px;
+}   
+.event_text p{
+    font-size:20px;
+}
