@@ -2,6 +2,8 @@
     height: 100%;
     margin:0;
     overflow-x: hidden;
+    font-family: "victorian-orchid", serif;
+    background-color: #f8e9cf;
 }
 
 
@@ -156,3 +158,48 @@ li a:active{
     color: black;
 }
 
+.accordion {
+    font-family: victorian-orchid, serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #45634C;
+    color: #ffeed6;
+    cursor: pointer;
+    padding-top: 16px;
+    padding-left: 15px;
+    width: 100%;
+    border:#859889;
+    text-align: left;
+    outline:#859889;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #57715d;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #8aa890;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel p{
+    font-size: 16.5px;
+  }
+
+  .accordion:after {
+    content: '+';
+    font-size: 25px;
+    color: #ffeed6;
+    float: right;
+    margin-right: 20px;
+    padding-bottom: 12px;
+  }
+  
+  .active:after {
+    content: "–";
+  }
