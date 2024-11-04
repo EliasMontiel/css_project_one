@@ -26,11 +26,20 @@ h4 {
 
 .boxoffice div {
     background-color: beige;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 20px;
     padding: 0.5em;
+    padding-left: 0.75em;;
+    padding-right: 0.75em;
     margin: 10px;
+}
+
+.csadmin {
+    display: grid;
+    grid-template-areas:
+    "main main main";
+    margin: 15px;
+    padding: 15px;
+    gap:1em;
 }
 
 
