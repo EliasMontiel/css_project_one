@@ -1,8 +1,38 @@
+@media screen and (orientation: portrait) {
+    .event{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .event2{
+        display:flex;
+        gap: 2em;
+        flex-direction: column-reverse;
+    }
+
+    .event_image
+    {
+        width:45%;
+        height:auto;
+        
+    }
+    .event_text {
+        padding:10px;
+        align-self: center;
+        color:white;
+    }
+
+}
+
+
+
 body, html {
     height: 100%;
     margin:0;
     overflow-x: hidden;
-    background-color: white; 
+    font-family: "victorian-orchid", serif;
+    background-color: #f8e9cf;
 }
 
 .month{
