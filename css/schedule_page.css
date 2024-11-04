@@ -11,12 +11,17 @@
         flex-direction: column-reverse;
     }
 
-    .event_image
+    .event2 img
     {
-        width:45%;
+        width:100%;
         height:auto;
-        
     }
+    .event img
+    {
+        width:100%;
+        height:auto;
+    }
+    
     .event_text {
         padding:10px;
         align-self: center;
@@ -69,12 +74,12 @@ body, html {
     background-color: #99ae9e; 
 }
 
-.event_image{
+/* .event_img{
     border-radius: 10px;
     margin-right:20px;
     width:45%;
     height:auto;
-}
+} */
 
 .event_text {
     padding:20px;
