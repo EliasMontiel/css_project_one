@@ -31,7 +31,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: "victorian-orchid", serif;
+    font-family: victorian-orchid, serif; 
   }
 
 
@@ -145,6 +145,12 @@ li a:hover{
 li a:active{
     background-color: white;
     color: black;
+}
+
+#faq_header{
+  border-radius: 20px;
+  padding:1%;
+  background-color: #8aa890;
 }
 
 .accordion {
