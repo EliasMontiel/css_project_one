@@ -25,12 +25,16 @@ h4 {
 }
 
 .boxoffice div {
-    background-color: beige;
+    background-color: #45634C;
     border-radius: 20px;
     padding: 0.5em;
     padding-left: 0.75em;;
     padding-right: 0.75em;
     margin: 10px;
+}
+
+.boxoffice h4, p {
+    color: white;
 }
 
 .csadmin {
