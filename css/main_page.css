@@ -2,12 +2,13 @@ body, html {
     height: 100%;
     margin:0;
     overflow-x: hidden;
+    background-color: #f8e9cf;
 }
 
 .main-page {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4em;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
