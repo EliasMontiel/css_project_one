@@ -111,19 +111,26 @@
     <script>
         var acc = document.getElementsByClassName("accordion");
 
-
-        for (var i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", accordFunc);
-            function accordFunc(){
+        function accordFunc(){
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
+                    this.style.transition = "border-radius .2s ease-out .4s";
                 } else {
+                    this.style.transition = "border-radius .2s ease-out";
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 }
             }
+
+
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", accordFunc);
         }
+
+
+        
+
     </script>
 </body>
 </html>

@@ -100,19 +100,7 @@ li a:active{
         gap: 2em
         /* flex-direction: column; */
     }
-    .main-page {  
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 10px 10px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "s1 s1"
-          "s2 s2"
-          "s3 s3"
-          "s4 s4"
-          "s5 s5";
-    }
+  
 
 }
 
@@ -121,7 +109,8 @@ div.main_faq {
 }
 
 p, h4 {
-    margin: 2em;
+    margin: 1em;
+    font-size: 17px;
 }
 nav{
     position: sticky;
@@ -166,17 +155,25 @@ li a:active{
     color: #ffeed6;
     cursor: pointer;
     padding-top: 16px;
-    padding-left: 15px;
+    padding-left: 18px;
     width: 100%;
     border:#859889;
     text-align: left;
     outline:#859889;
     font-size: 18px;
     transition: 0.4s;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: border-radius .2s ease-out .5s
   }
   
   .active, .accordion:hover {
     background-color: #57715d;
+  }
+
+  .active{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   
   .panel {
@@ -184,7 +181,9 @@ li a:active{
     background-color: #8aa890;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out .2s;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .panel p{
@@ -197,7 +196,7 @@ li a:active{
     color: #ffeed6;
     float: right;
     margin-right: 20px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
   
   .active:after {
