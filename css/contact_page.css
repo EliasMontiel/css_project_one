@@ -43,14 +43,25 @@ h4 {
 }
 
 .csadmin {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+   
+   
+   
+    /*display: grid;
     grid-template-areas:
     "main main main";
     width: 100vw;
     height: 100vh;
     margin: 15px;
     padding: 15px;
-    gap:1em;
+    gap:1em;*/
+}
+
+#csa {
+    margin: 15px;
 }
 
 
@@ -220,15 +231,28 @@ li a:active{
     }
     
     .boxoffice p {
-        font-size: 0.6em;
+        font-size: 1em;
     }
 
     .boxoffice h4 {
-        font-size: smaller;
+        font-size: 1.5;
+    }
+
+    .boxoffice {
+        flex-direction: column;
+
     }
 
      .csadmin {
-        grid-template-areas:
+
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 15px;
+
+
+
+        /*grid-template-areas:
         "main"
         "main"
         "main"; 
@@ -236,7 +260,7 @@ li a:active{
         margin: 1em;;
         padding: 1em;
         width: 75vw;
-        height: 30vh;
+        height: 30vh;*/
         
     }
 
@@ -245,11 +269,16 @@ li a:active{
     }
 
     .csadmin p {
-        font-size: 2em;
+        font-size: 1em;
     }
 
     .csadmin h4 {
-        font-size: 3em;
+        font-size: 2em;
+    }
+
+    #csa {
+        text-align: center;
+        margin: 15px;
     }
 
 }
