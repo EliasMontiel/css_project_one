@@ -1,5 +1,7 @@
 /* information */
-
+html {
+    background-color: #f8e9cf;
+}
 h1{
     text-align: center;
 }
@@ -27,7 +29,6 @@ h4 {
 .boxoffice div {
     background-color: #45634C;
     border-radius: 20px;
-    padding: 0.5em;
     padding-left: 0.75em;;
     padding-right: 0.75em;
     margin: 10px;
@@ -42,12 +43,25 @@ h4 {
 }
 
 .csadmin {
-    display: grid;
-    grid-template-areas:
-    "main main main";
+    display: flex;
+    flex-direction: column;
     margin: 15px;
     padding: 15px;
-    gap:1em;
+   
+   
+   
+    /*display: grid;
+    grid-template-areas:
+    "main main main";
+    width: 100vw;
+    height: 100vh;
+    margin: 15px;
+    padding: 15px;
+    gap:1em;*/
+}
+
+#csa {
+    margin: 15px;
 }
 
 
@@ -201,6 +215,70 @@ li a:active{
           "s3 s3"
           "s4 s4"
           "s5 s5";
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+        
+    }
+    
+    .boxoffice p {
+        font-size: 1em;
+    }
+
+    .boxoffice h4 {
+        font-size: 1.5;
+    }
+
+    .boxoffice {
+        flex-direction: column;
+
+    }
+
+     .csadmin {
+
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 15px;
+
+
+
+        /*grid-template-areas:
+        "main"
+        "main"
+        "main"; 
+        justify-items: center;
+        margin: 1em;;
+        padding: 1em;
+        width: 75vw;
+        height: 30vh;*/
+        
+    }
+
+    .csadmin div {
+        gap: 10px;
+    }
+
+    .csadmin p {
+        font-size: 1em;
+    }
+
+    .csadmin h4 {
+        font-size: 2em;
+    }
+
+    #csa {
+        text-align: center;
+        margin: 15px;
     }
 
 }
